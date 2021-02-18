@@ -1,6 +1,7 @@
 const express=require('express')
 const app=new express()
-const noteRoute=require('./routes/noteRoute')
+const path=require('path')
+const noteRoute=require('./routes/apiRoute')
 const htmlRoute=require('./routes/htmlRoute')
 
 const PORT=process.env.PORT||3006
@@ -10,8 +11,9 @@ app.listen(PORT,()=>{
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
+app.use('/',htmlRoute)
+app.use('/api',noteRoute)
 
-// app.get('/notes',notesRoute)
+app.use(express.static(path.join(__dirname,'public')))
 
-app.get('*',htmlRoute)
 
