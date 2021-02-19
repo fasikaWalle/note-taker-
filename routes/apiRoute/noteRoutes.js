@@ -15,7 +15,6 @@ router.post('/notes',(req,res)=>{
 })
 router.delete('/notes/:id',(req,res)=>{
     const found=notes.filter(note=>note.id===req.params.id)
-    console.log()
     if(found =='undefined' || found.length===0){
         res.status(404).send(`no result with the id ${req.params.id}`) 
     }else{
