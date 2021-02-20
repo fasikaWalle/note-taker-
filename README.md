@@ -28,6 +28,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Tests
 ``npm run test``
 ## screenshot
+![Note-Taker](https://user-images.githubusercontent.com/73629983/108580305-8ee4aa00-72f0-11eb-8088-9e887d0769a7.png)
 
 ## Questions
 If you have any question about the repo, open an issue or contact me directly at [fasikaWalle](https://github.com/fasikaWalle/)
