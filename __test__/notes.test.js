@@ -14,7 +14,7 @@ text:"sample"},notes)
 test('delete notes',()=>{    
      const note=[{ title: "test",
      text:"sample", id:'abcdef'} ] 
-     const sampleNote=deleteNotes('abcdef',note) 
+     deleteNotes('abcdef',note) 
      expect(note.length).toBe(0)
 })
 
